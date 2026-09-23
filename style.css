@@ -1,0 +1,171 @@
+/* ===== Reset & Base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f4f5fb;
+  color: #1f2233;
+  line-height: 1.6;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1e2a5e;
+  padding: 16px 32px;
+  flex-wrap: wrap;
+}
+
+.navbar .logo {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px 4px;
+}
+
+.navbar a:hover {
+  color: #a9b7ff;
+}
+
+.navbar a.active {
+  color: #ffd54a;
+  font-weight: bold;
+  border-bottom: 2px solid #ffd54a;
+}
+
+/* ===== Layout Container ===== */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+/* ===== Hero (Home) ===== */
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  margin-bottom: 12px;
+  color: #1e2a5e;
+}
+
+.hero p {
+  font-size: 1.05rem;
+  color: #4a4f6b;
+}
+
+/* ===== Card ===== */
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 28px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  margin-bottom: 24px;
+}
+
+.card h2 {
+  margin-bottom: 16px;
+  color: #1e2a5e;
+}
+
+/* ===== Profile Page ===== */
+.profile-photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background-color: #dfe3f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: #1e2a5e;
+  margin: 0 auto 20px auto;
+}
+
+.profile-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.profile-table td {
+  padding: 10px 8px;
+  border-bottom: 1px solid #e7e9f5;
+}
+
+.profile-table td:first-child {
+  font-weight: 600;
+  width: 160px;
+  color: #4a4f6b;
+}
+
+/* ===== Contact Page ===== */
+.contact-info p {
+  margin-bottom: 10px;
+}
+
+.contact-info span {
+  font-weight: 600;
+  color: #1e2a5e;
+}
+
+form.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px 12px;
+  border: 1px solid #d3d7ea;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-family: inherit;
+}
+
+.contact-form button {
+  background-color: #1e2a5e;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #2c3b7a;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #7a7f9c;
+  font-size: 0.9rem;
+}
